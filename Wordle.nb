@@ -1,0 +1,552 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[     23182,        544]
+NotebookOptionsPosition[     21814,        516]
+NotebookOutlinePosition[     22208,        532]
+CellTagsIndexPosition[     22165,        529]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"generateword", "[", "]"}], ":=", " ", 
+   RowBox[{"RandomChoice", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<apple\>\"", ",", "\"\<baker\>\"", ",", "\"\<candy\>\"", ",", 
+      "\"\<dwarf\>\"", ",", "\"\<eager\>\"", ",", "\"\<fudge\>\"", ",", 
+      "\"\<hatch\>\"", ",", "\"\<icily\>\"", ",", "\"\<jewel\>\"", ",", 
+      "\"\<kebab\>\"", ",", "\"\<latch\>\"", ",", "\"\<mango\>\"", ",", 
+      "\"\<nymph\>\"", ",", "\"\<oasis\>\"", ",", "\"\<puppy\>\"", ",", 
+      "\"\<quark\>\"", ",", "\"\<rider\>\"", ",", "\"\<sable\>\"", ",", 
+      "\"\<table\>\"", ",", "\"\<umbra\>\"", ",", "\"\<vocal\>\"", ",", 
+      "\"\<waltz\>\"", ",", "\"\<xenon\>\"", ",", "\"\<yield\>\"", ",", 
+      "\"\<zebra\>\"", ",", "\"\<amaze\>\"", ",", "\"\<blitz\>\"", ",", 
+      "\"\<crisp\>\"", ",", "\"\<daisy\>\"", ",", "\"\<evoke\>\"", ",", 
+      "\"\<ferry\>\"", ",", "\"\<glide\>\"", ",", "\"\<haste\>\"", ",", 
+      "\"\<inbox\>\"", ",", "\"\<jumpy\>\"", ",", "\"\<lunar\>\"", ",", 
+      "\"\<noble\>\"", ",", "\"\<opera\>\"", ",", "\"\<piano\>\"", ",", 
+      "\"\<quail\>\"", ",", "\"\<raise\>\"", ",", "\"\<scent\>\"", ",", 
+      "\"\<tiger\>\"", ",", "\"\<ultra\>\"", ",", "\"\<vivid\>\"", ",", 
+      "\"\<whale\>\"", ",", " ", "\"\<youth\>\"", ",", "\"\<blaze\>\"", ",", 
+      "\"\<cloud\>\"", ",", "\"\<dance\>\"", ",", "\"\<fever\>\"", ",", 
+      "\"\<globe\>\"", ",", "\"\<honor\>\"", ",", "\"\<icing\>\"", ",", 
+      "\"\<jolly\>\"", ",", "\"\<kneel\>\"", ",", "\"\<lemon\>\"", ",", 
+      "\"\<medal\>\"", ",", "\"\<nurse\>\"", ",", "\"\<olive\>\"", ",", 
+      "\"\<panda\>\"", ",", "\"\<quest\>\"", ",", "\"\<rival\>\"", ",", 
+      "\"\<saint\>\"", ",", "\"\<tango\>\"", ",", "\"\<ultra\>\"", ",", 
+      "\"\<vocal\>\"", ",", "\"\<whisk\>\"", ",", "\"\<xenon\>\"", ",", 
+      "\"\<young\>\"", ",", "\"\<zesty\>\"", ",", "\"\<amigo\>\"", ",", 
+      "\"\<blink\>\"", ",", "\"\<crust\>\"", ",", "\"\<dream\>\"", ",", 
+      "\"\<early\>\"", ",", "\"\<fable\>\"", ",", "\"\<glaze\>\"", ",", 
+      "\"\<heart\>\"", ",", "\"\<image\>\"", ",", "\"\<joker\>\"", ",", 
+      "\"\<kayak\>\"", ",", "\"\<leash\>\"", ",", "\"\<medic\>\"", ",", 
+      "\"\<niece\>\"", ",", "\"\<olive\>\"", ",", "\"\<party\>\"", ",", 
+      "\"\<quake\>\"", ",", "\"\<rover\>\"", ",", "\"\<saint\>\"", ",", 
+      "\"\<tally\>\"", ",", "\"\<under\>\"", ",", "\"\<vivid\>\"", ",", 
+      "\"\<woven\>\"", ",", "\"\<yield\>\"", ",", "\"\<zappy\>\"", ",", " ", 
+      "\"\<cobra\>\"", ",", "\"\<zebra\>\"", ",", "\"\<horse\>\"", ",", 
+      "\"\<panda\>\"", ",", "\"\<koala\>\"", ",", "\"\<liger\>\"", ",", 
+      "\"\<gecko\>\"", ",", "\"\<lemur\>\"", ",", "\"\<eagle\>\"", ",", 
+      "\"\<skunk\>\"", ",", "\"\<sheep\>\"", ",", "\"\<otter\>\"", ",", 
+      "\"\<whale\>\"", ",", "\"\<feral\>\"", ",", "\"\<frogs\>\"", ",", 
+      "\"\<beast\>\"", ",", "\"\<snake\>\"", ",", "\"\<finch\>\"", ",", 
+      "\"\<tunas\>\"", ",", "\"\<hippo\>\"", ",", "\"\<shark\>\"", ",", 
+      "\"\<baboo\>\"", ",", "\"\<bison\>\"", ",", "\"\<hawks\>\"", ",", 
+      "\"\<beard\>\"", ",", "\"\<chimp\>\"", ",", "\"\<swans\>\"", ",", 
+      "\"\<bears\>\"", ",", "\"\<geese\>\"", ",", "\"\<fawns\>\"", ",", 
+      "\"\<crane\>\"", ",", "\"\<squid\>\"", ",", "\"\<snail\>\"", ",", 
+      "\"\<frogs\>\"", ",", "\"\<sloth\>\"", ",", "\"\<mouse\>\"", ",", 
+      "\"\<goose\>\"", ",", "\"\<hedge\>\"", ",", "\"\<raven\>\"", ",", 
+      "\"\<hawks\>\"", ",", "\"\<hippo\>\"", ",", "\"\<beaks\>\"", ",", 
+      "\"\<koala\>\"", ",", "\"\<sheep\>\"", ",", "\"\<swans\>\"", ",", 
+      "\"\<beard\>\"", ",", "\"\<otter\>\"", ",", "\"\<beast\>\"", ",", 
+      "\"\<beaks\>\"", ",", "\"\<panda\>\"", ",", "\"\<gecko\>\"", ",", 
+      "\"\<finch\>\"", ",", "\"\<eagle\>\"", ",", "\"\<whale\>\"", ",", 
+      "\"\<baboo\>\"", ",", "\"\<jaguar\>\"", ",", "\"\<frogs\>\"", ",", 
+      "\"\<lemur\>\"", ",", "\"\<crane\>\"", ",", "\"\<snake\>\"", ",", 
+      "\"\<tiger\>\"", ",", "\"\<fawns\>\"", ",", "\"\<bears\>\"", ",", 
+      "\"\<skunk\>\"", ",", "\"\<chimp\>\"", ",", "\"\<tunas\>\"", ",", 
+      "\"\<hawks\>\"", ",", "\"\<sheep\>\"", ",", "\"\<beaks\>\"", ",", 
+      "\"\<beard\>\"", ",", "\"\<koala\>\"", ",", "\"\<swans\>\"", ",", 
+      "\"\<crane\>\"", ",", "\"\<whale\>\"", ",", "\"\<geese\>\"", ",", 
+      "\"\<otter\>\"", ",", "\"\<snake\>\"", ",", "\"\<mouse\>\"", ",", 
+      "\"\<hippo\>\"", ",", "\"\<shark\>\"", ",", "\"\<fawns\>\"", ",", 
+      "\"\<hawks\>\"", ",", "\"\<feral\>\"", ",", "\"\<beast\>\"", ",", 
+      "\"\<gecko\>\"", ",", "\"\<tiger\>\"", ",", "\"\<beard\>\"", ",", 
+      "\"\<beaks\>\"", ",", "\"\<koala\>\"", ",", "\"\<finch\>\"", ",", 
+      "\"\<eagle\>\"", ",", "\"\<whale\>\"", ",", "\"\<llama\>\"", ",", 
+      "\"\<otter\>\"", ",", "\"\<snake\>\""}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"feedback", "[", 
+     RowBox[{"targetWord_", ",", "guessedWord_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"targetLetters", ",", "feedback"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"targetLetters", "=", 
+        RowBox[{"Characters", "[", "targetWord", "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"feedback", "=", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"guessedWord", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], "===", 
+             RowBox[{"targetLetters", "[", 
+              RowBox[{"[", "i", "]"}], "]"}]}], ",", "Green", ",", 
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{"MemberQ", "[", 
+               RowBox[{"targetLetters", ",", 
+                RowBox[{"guessedWord", "[", 
+                 RowBox[{"[", "i", "]"}], "]"}]}], "]"}], ",", "Yellow", ",", 
+              "Gray"}], "]"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "1", ",", "5"}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", "feedback"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"playWordle", "[", "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"targetWord", ",", "attempts", ",", "guess"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"targetWord", "=", 
+        RowBox[{"generateword", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"attempts", "=", "10"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{
+         RowBox[{"Style", "[", 
+          RowBox[{
+          "\"\<Welcome to Wordle!\\n\>\"", ",", "Italic", ",", " ", "Bold", 
+           ",", " ", "32"}], "]"}], ",", 
+         RowBox[{"Style", "[", 
+          RowBox[{
+          "\"\<Created by Estella\\n\\n\>\"", ",", "Italic", ",", " ", "14"}],
+           "]"}], ",", " ", 
+         "\"\<Guess the 5-letter word.\\n\!\(\*TemplateBox[<|\"color\" -> \
+RGBColor[0, 1, 0]|>,\"RGBColorSwatchTemplate\"]\) = the letter is in the word \
+and in the correct spot.\\n\!\(\*TemplateBox[<|\"color\" -> RGBColor[1, 1, \
+0]|>,\"RGBColorSwatchTemplate\"]\) = the letter is in the word but in the \
+wrong spot.\\n\!\(\*TemplateBox[<|\"color\" -> \
+GrayLevel[0.5]|>,\"GrayLevelColorSwatchTemplate\"]\) = the letter is not in \
+the word\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Print", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<\\nAttempt \>\"", ",", " ", "Bold"}], "]"}], ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{"i", ",", " ", "Bold"}], "]"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"guess", "=", 
+           RowBox[{"ToLowerCase", "@", 
+            RowBox[{
+            "InputString", "[", "\"\<Enter your guess:\>\"", "]"}]}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"StringLength", "[", "guess", "]"}], "!=", "5"}], ",", 
+            RowBox[{
+             RowBox[{"Print", "[", "\"\<Enter a 5-letter word!\>\"", "]"}], 
+             ";", 
+             RowBox[{"Continue", "[", "]"}]}]}], "]"}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Print", "[", 
+           RowBox[{"\"\<Your guess:        \>\"", ",", " ", 
+            RowBox[{"ToUpperCase", "[", 
+             RowBox[{"StringRiffle", "[", 
+              RowBox[{
+               RowBox[{"Characters", "[", "guess", "]"}], ",", " ", 
+               "\"\<  \>\""}], "]"}], "]"}], ",", " ", "\[IndentingNewLine]", 
+            "\"\<\\nYour feedback:    \>\"", ",", 
+            RowBox[{"feedback", "[", 
+             RowBox[{"targetWord", ",", 
+              RowBox[{"Characters", "[", "guess", "]"}]}], "]"}]}], "]"}], 
+          ";", "\[IndentingNewLine]", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"guess", "==", "targetWord"}], ",", 
+            RowBox[{
+             RowBox[{"Print", "[", 
+              RowBox[{
+               RowBox[{"Style", "[", 
+                RowBox[{
+                "\"\<\\n\|01f389 GREAT JOB! \|01f389\>\"", ",", " ", "Bold", 
+                 ",", " ", "24"}], "]"}], ",", 
+               "\"\<\\nYou guessed the word!\>\""}], "]"}], ";", 
+             "\[IndentingNewLine]", 
+             RowBox[{"Return", "[", "]"}]}]}], "]"}], ";"}], 
+         "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "attempts"}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"guess", " ", "!=", " ", "targetWord"}], ",", " ", 
+         RowBox[{
+          RowBox[{"Print", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<\\n\|01f62d GAME OVER! \|01f62d\>\"", ",", " ", "Bold", ",",
+               " ", "24"}], "]"}], ",", "\"\<\\nThe word was: \>\"", ",", 
+            "targetWord"}], "]"}], ";"}]}], "]"}]}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"playWordle", "[", "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.899662330473977*^9, 3.8996623369102097`*^9}, {
+   3.899662400642508*^9, 3.899662425753168*^9}, {3.899662533119933*^9, 
+   3.899662562181836*^9}, {3.899662598301248*^9, 3.899662598522078*^9}, {
+   3.899662728219276*^9, 3.899662754098403*^9}, {3.899662801283217*^9, 
+   3.899662810596579*^9}, {3.899662917903838*^9, 3.8996629417669153`*^9}, {
+   3.899663220012142*^9, 3.899663239479559*^9}, {3.899664997436713*^9, 
+   3.899665002804017*^9}, {3.899665072012591*^9, 3.89966507217666*^9}, 
+   3.899718135537404*^9, {3.8997237179788103`*^9, 3.8997237180795507`*^9}, {
+   3.8997351593772*^9, 3.8997351607789907`*^9}, {3.8997353155389433`*^9, 
+   3.899735354821455*^9}, {3.8997354625524187`*^9, 3.8997354943146067`*^9}, {
+   3.899735578266273*^9, 3.8997355936446457`*^9}, {3.899735668672995*^9, 
+   3.899735682348999*^9}, 3.899735753615897*^9, {3.8997358821839037`*^9, 
+   3.8997358858844547`*^9}, {3.899735920801735*^9, 3.899735957588236*^9}, {
+   3.899736291239132*^9, 3.899736308524313*^9}, {3.899736469849348*^9, 
+   3.899736478876369*^9}, {3.899736709096478*^9, 3.899736741332314*^9}, {
+   3.899736790661618*^9, 3.8997367928802423`*^9}, {3.89974583718677*^9, 
+   3.89974583890606*^9}, {3.8997461097399817`*^9, 3.899746110285428*^9}, {
+   3.8997483300049963`*^9, 3.8997483536400957`*^9}, {3.899748515578363*^9, 
+   3.899748517349482*^9}, 3.900930032701447*^9, {3.900930095242867*^9, 
+   3.900930206585135*^9}, {3.90093030247908*^9, 3.90093030713168*^9}, {
+   3.900930373781179*^9, 3.900930485491517*^9}, {3.900930538464899*^9, 
+   3.9009305803581142`*^9}, {3.900930644231265*^9, 3.900930698950161*^9}, {
+   3.900930731877132*^9, 3.900930771288332*^9}, {3.9021329449462337`*^9, 
+   3.902133058968273*^9}, {3.902133137690481*^9, 3.9021332774806013`*^9}, {
+   3.9021333645891047`*^9, 3.9021334470139923`*^9}, {3.902133478966126*^9, 
+   3.902133586546892*^9}, {3.902133625304138*^9, 3.902133625453002*^9}, {
+   3.902133660441293*^9, 3.902133686057081*^9}, {3.902133725610146*^9, 
+   3.902133760317698*^9}, 3.902133816388514*^9, {3.902133922575789*^9, 
+   3.902133927290357*^9}, 3.9021340170243196`*^9, {3.902134177812479*^9, 
+   3.902134186545888*^9}, {3.902134216612927*^9, 3.9021342200404673`*^9}, {
+   3.9021342511810923`*^9, 3.902134251519951*^9}, {3.902134351017288*^9, 
+   3.902134351172564*^9}, {3.902134413579317*^9, 3.902134459021343*^9}, {
+   3.902134820641426*^9, 3.90213482079016*^9}, {3.9021348782303743`*^9, 
+   3.90213489405972*^9}, {3.902134924221304*^9, 3.902134959355626*^9}, {
+   3.902135000004156*^9, 3.902135000716894*^9}},
+ CellLabel->
+  "In[145]:=",ExpressionUUID->"81ac3ad7-a762-46d9-b801-ecee75714b63"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Welcome to Wordle!\\n\"\>",
+    StripOnInput->False,
+    FontSize->32,
+    FontWeight->Bold,
+    FontSlant->Italic], "\[InvisibleSpace]", 
+   StyleBox["\<\"Created by Estella\\n\\n\"\>",
+    StripOnInput->False,
+    FontSize->14,
+    FontSlant->Italic], 
+   "\[InvisibleSpace]", "\<\"Guess the 5-letter \
+word.\\n\\!\\(\\*TemplateBox[<|\\\"color\\\" -> RGBColor[0, 1, \
+0]|>,\\\"RGBColorSwatchTemplate\\\"]\\) = the letter is in the word and in \
+the correct spot.\\n\\!\\(\\*TemplateBox[<|\\\"color\\\" -> RGBColor[1, 1, \
+0]|>,\\\"RGBColorSwatchTemplate\\\"]\\) = the letter is in the word but in \
+the wrong spot.\\n\\!\\(\\*TemplateBox[<|\\\"color\\\" -> GrayLevel[0.5]|>,\\\
+\"GrayLevelColorSwatchTemplate\\\"]\\) = the letter is not in the word\"\>"}],
+  
+  SequenceForm[
+   Style["Welcome to Wordle!\n", Italic, Bold, 32], 
+   Style["Created by Estella\n\n", Italic, 14], 
+   "Guess the 5-letter word.\n\!\(\*TemplateBox[<|\"color\" -> RGBColor[0, 1, \
+0]|>,\"RGBColorSwatchTemplate\"]\) = the letter is in the word and in the \
+correct spot.\n\!\(\*TemplateBox[<|\"color\" -> RGBColor[1, 1, \
+0]|>,\"RGBColorSwatchTemplate\"]\) = the letter is in the word but in the \
+wrong spot.\n\!\(\*TemplateBox[<|\"color\" -> \
+GrayLevel[0.5]|>,\"GrayLevelColorSwatchTemplate\"]\) = the letter is not in \
+the word"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9039739549131517`*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"fcffbd6d-1c6a-42ab-a0d6-e5089b51144a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"\\nAttempt \"\>",
+    StripOnInput->False,
+    FontWeight->Bold], "\[InvisibleSpace]", 
+   StyleBox["1",
+    StripOnInput->False,
+    FontWeight->Bold]}],
+  SequenceForm[
+   Style["\nAttempt ", Bold], 
+   Style[1, Bold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973954936121*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"fa9bf895-8c61-4cdf-b304-31d5e64c1f66"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Your guess:        \"\>", 
+   "\[InvisibleSpace]", "\<\"D  O  N  U  T\"\>", 
+   "\[InvisibleSpace]", "\<\"\\nYour feedback:    \"\>", "\[InvisibleSpace]", 
+   
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"]}], "}"}]}],
+  SequenceForm[
+  "Your guess:        ", "D  O  N  U  T", "\nYour feedback:    ", {
+    GrayLevel[0.5], 
+    GrayLevel[0.5], 
+    RGBColor[1, 1, 0], 
+    GrayLevel[0.5], 
+    GrayLevel[0.5]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973961011688*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"25d45e2b-05a8-486e-a766-c433c6f95227"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"\\nAttempt \"\>",
+    StripOnInput->False,
+    FontWeight->Bold], "\[InvisibleSpace]", 
+   StyleBox["2",
+    StripOnInput->False,
+    FontWeight->Bold]}],
+  SequenceForm[
+   Style["\nAttempt ", Bold], 
+   Style[2, Bold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973961019208*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"272f3127-8188-412f-b052-b9d2cc7faeb6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Your guess:        \"\>", 
+   "\[InvisibleSpace]", "\<\"T  I  G  E  R\"\>", 
+   "\[InvisibleSpace]", "\<\"\\nYour feedback:    \"\>", "\[InvisibleSpace]", 
+   
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> GrayLevel[0.5]|>,
+      "GrayLevelColorSwatchTemplate"]}], "}"}]}],
+  SequenceForm[
+  "Your guess:        ", "T  I  G  E  R", "\nYour feedback:    ", {
+    GrayLevel[0.5], 
+    GrayLevel[0.5], 
+    GrayLevel[0.5], 
+    GrayLevel[0.5], 
+    GrayLevel[0.5]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973962489802*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"d69681c3-2160-4936-8986-275eec050f3e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"\\nAttempt \"\>",
+    StripOnInput->False,
+    FontWeight->Bold], "\[InvisibleSpace]", 
+   StyleBox["3",
+    StripOnInput->False,
+    FontWeight->Bold]}],
+  SequenceForm[
+   Style["\nAttempt ", Bold], 
+   Style[3, Bold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973962496085*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"6600e27f-4833-470c-a273-242fc8649305"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Your guess:        \"\>", 
+   "\[InvisibleSpace]", "\<\"N  N  N  N  N\"\>", 
+   "\[InvisibleSpace]", "\<\"\\nYour feedback:    \"\>", "\[InvisibleSpace]", 
+   
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[1, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}]}],
+  SequenceForm[
+  "Your guess:        ", "N  N  N  N  N", "\nYour feedback:    ", {
+    RGBColor[0, 1, 0], 
+    RGBColor[1, 1, 0], 
+    RGBColor[1, 1, 0], 
+    RGBColor[1, 1, 0], 
+    RGBColor[1, 1, 0]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973966462879*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"24057a15-4b8a-4a8e-94a5-1a86de76fbde"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"\\nAttempt \"\>",
+    StripOnInput->False,
+    FontWeight->Bold], "\[InvisibleSpace]", 
+   StyleBox["4",
+    StripOnInput->False,
+    FontWeight->Bold]}],
+  SequenceForm[
+   Style["\nAttempt ", Bold], 
+   Style[4, Bold]],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.903973966470275*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"dda5182a-31c3-45df-bf51-ae5973876f6b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Your guess:        \"\>", 
+   "\[InvisibleSpace]", "\<\"N  Y  M  P  H\"\>", 
+   "\[InvisibleSpace]", "\<\"\\nYour feedback:    \"\>", "\[InvisibleSpace]", 
+   
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"], ",", 
+     TemplateBox[<|"color" -> RGBColor[0, 1, 0]|>,
+      "RGBColorSwatchTemplate"]}], "}"}]}],
+  SequenceForm[
+  "Your guess:        ", "N  Y  M  P  H", "\nYour feedback:    ", {
+    RGBColor[0, 1, 0], 
+    RGBColor[0, 1, 0], 
+    RGBColor[0, 1, 0], 
+    RGBColor[0, 1, 0], 
+    RGBColor[0, 1, 0]}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9039739764976797`*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"533ebd91-0597-4882-aa88-149b94c58d87"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"\\n\|01f389 GREAT JOB! \|01f389\"\>",
+    StripOnInput->False,
+    FontSize->24,
+    FontWeight->Bold], 
+   "\[InvisibleSpace]", "\<\"\\nYou guessed the word!\"\>"}],
+  SequenceForm[
+   Style["\n\|01f389 GREAT JOB! \|01f389", Bold, 24], 
+   "\nYou guessed the word!"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9039739765067787`*^9},
+ CellLabel->
+  "During evaluation of \
+In[145]:=",ExpressionUUID->"63c5cf35-d582-4b73-9f56-993b52571746"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{Automatic, 79}, {-2, Automatic}},
+FrontEndVersion->"13.3 for Mac OS X ARM (64-bit) (June 8, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3822d969-1e45-4d4b-a51c-46089819250f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 12935, 239, 841, "Input",ExpressionUUID->"81ac3ad7-a762-46d9-b801-ecee75714b63"],
+Cell[CellGroupData[{
+Cell[13543, 265, 1556, 34, 157, "Print",ExpressionUUID->"fcffbd6d-1c6a-42ab-a0d6-e5089b51144a"],
+Cell[15102, 301, 461, 16, 44, "Print",ExpressionUUID->"fa9bf895-8c61-4cdf-b304-31d5e64c1f66"],
+Cell[15566, 319, 1076, 29, 44, "Print",ExpressionUUID->"25d45e2b-05a8-486e-a766-c433c6f95227"],
+Cell[16645, 350, 461, 16, 44, "Print",ExpressionUUID->"272f3127-8188-412f-b052-b9d2cc7faeb6"],
+Cell[17109, 368, 1076, 29, 44, "Print",ExpressionUUID->"d69681c3-2160-4936-8986-275eec050f3e"],
+Cell[18188, 399, 461, 16, 44, "Print",ExpressionUUID->"6600e27f-4833-470c-a273-242fc8649305"],
+Cell[18652, 417, 1076, 29, 44, "Print",ExpressionUUID->"24057a15-4b8a-4a8e-94a5-1a86de76fbde"],
+Cell[19731, 448, 461, 16, 44, "Print",ExpressionUUID->"dda5182a-31c3-45df-bf51-ae5973876f6b"],
+Cell[20195, 466, 1078, 29, 44, "Print",ExpressionUUID->"533ebd91-0597-4882-aa88-149b94c58d87"],
+Cell[21276, 497, 510, 15, 77, "Print",ExpressionUUID->"63c5cf35-d582-4b73-9f56-993b52571746"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
